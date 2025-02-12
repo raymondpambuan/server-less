@@ -20,14 +20,29 @@ Serverless computing is a cloud computing execution model where the cloud provid
 1. Log in to your AWS Console.
 2. Navigate to `IAM` (Type "IAM" in the search bar).
 3. On the left tab, navigate to `Roles` and click the `Create role` button.
+
+![image](https://github.com/user-attachments/assets/2b00c74b-bcff-4727-9c10-7352d2994f5d)
+
 4. Select trusted entity type to `AWS service` and Use case `Lambda`, then click next.
 5. In Permission policies, search `basic` and tick the checkbox of `AWSLambdaBasicExecutionRole` policy.
-6. In Permission policies, search `dynamo` and tick the checkbox of `AmazonDynamoDBFullAccess` policy, then click next.
-7. In role name, enter `admin-lambda`, then click `Create role`.
-8. Now, navigate to `Lambda` (Type "Lambda" in the console search bar).
-9. Click `Create function` and enter function name `demo-function`. Under Runtime, select `Python 3.12`.
-10. Expand the default execution role and select the existing role recently created (admin-lambda) then click create function.
+6. Once more, in permission policies, search `dynamo` and tick the checkbox of `AmazonDynamoDBFullAccess` policy, then click next.
+
+![image](https://github.com/user-attachments/assets/e842893b-610d-4ce0-bbef-2048e5412b50)
+
+7. In role name, enter `admin-lambda`, then click `Create role` at the bottom of the page.
+8. Now, navigate to `Lambda` (Type "Lambda" in the console search bar). 
+
+![image](https://github.com/user-attachments/assets/9b3dbf56-be60-4867-a2f1-c0af677fb13d)
+
+9. Click `Create function` and enter function name `demo-function`. Under Runtime, select `Python 3.12`, and architecture to `x86_64`.
+10. Expand the default execution role, then tick `Use an existing role`, and select the recently created (admin-lambda). Afterward, click create function.
+
+![image](https://github.com/user-attachments/assets/335fe3da-d4a7-4413-a4a5-29ee8817b999)
+
 11. In this repository, click ` < > Code ` and `Download ZIP`. Name it `demo-function` and save it in your preferred directory.
+
+
+
 12. In your Lambda function, click `Upload from`, select `.zip file`, and upload the downloaded ZIP file.
 13. In the navigation tab, select `README.md` and delete it.
 
