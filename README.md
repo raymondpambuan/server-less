@@ -4,7 +4,7 @@ Serverless computing is a cloud computing execution model where the cloud provid
 
 ![architecture](https://github.com/user-attachments/assets/40b19137-337f-4b3c-8fab-8a776f00a3de)
 
-**Disclaimer:** This activity is based on Avinash Reddy's [project](https://www.youtube.com/watch?v=dsH2QC6O3Gg).
+**Disclaimer:** This activity is based on Avinash Reddy's [project](https://www.youtube.com/watch?v=dsH2QC6O3Gg) and AWS 2025 UI.
 
 ## 📋 Requirements
 1. Browser (Google Chrome, Microsoft Edge, Opera GX, etc.)
