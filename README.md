@@ -41,7 +41,7 @@ Serverless computing is a cloud computing execution model where the cloud provid
 
 11. In this repository, click ` < > Code ` and `Download ZIP`. Name it `demo-function` and save it in your preferred directory.
 
-
+![image](https://github.com/user-attachments/assets/221584c9-022f-450e-8605-6b5499b2f44e)
 
 12. In your Lambda function, click `Upload from`, select `.zip file`, and upload the downloaded ZIP file.
 13. In the navigation tab, select `README.md` and delete it.
