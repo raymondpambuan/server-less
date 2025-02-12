@@ -43,24 +43,47 @@ Serverless computing is a cloud computing execution model where the cloud provid
 
 ![image](https://github.com/user-attachments/assets/221584c9-022f-450e-8605-6b5499b2f44e)
 
-12. In your Lambda function, click `Upload from`, select `.zip file`, and upload the downloaded ZIP file.
-13. In the navigation tab, select `README.md` and delete it.
+12. In your Lambda function, click `Upload from`, select `.zip file`. 
+
+![image](https://github.com/user-attachments/assets/8d627c5b-f348-4319-a11d-9545e1398359)
+
+13. Click `Upload` and select downloaded ZIP file, then click `Save`.
+
+![image](https://github.com/user-attachments/assets/d20fdd87-fd6c-4c07-ae6a-317d159e60d9)
 
 ## Part 2: Create a DynamoDB table to store form data
 1. Navigate to `DynamoDB` (Type "DynamoDB" in the console search bar).
 2. On the left tab, navigate to `Tables` and click `Create table`.
+
+![image](https://github.com/user-attachments/assets/eaab7fb2-f785-4113-b11c-b1dbc861c5d2)
+
 3. For table name, enter `demo-table`, and under Partition key, enter `email`. 
-4. Keep the other settings default and click `Create table`.
+
+![image](https://github.com/user-attachments/assets/025c221d-aaa3-4f6b-82b7-87590169ce74)
+
+4. Keep the other settings default and click `Create table` at the bottom. Wait for the status to become `Active` before proceeding.
 
 ## Part 3: Set Up an API Gateway Endpoint to trigger the Lambda function
 1. Navigate to `API Gateway` (Type "API Gateway" in the console search bar).
 2. Scroll down to find `REST API` and click `Build`.
+
+![image](https://github.com/user-attachments/assets/45d043be-cd6f-4826-ae96-dbc964bbd8be)
+
 3. Select `New API` and enter the API name `demo-api`. Keep the API endpoint type to `Regional` and click `Create API`.
 4. In the API Resources page, click `Create method`. Under method type, select `GET` in method type, and `Lambda function` for integration type.
 5. Turn on `Lambda proxy integration`, then, select the region where you created the Lambda function, and select the corresponding function, which should have the keyword of the name of the function (demo-function).
-6. Keep the default timeout and click `Create method`. Then, click `/` in the navigation pane and create another method.
-7. Under method type, select `POST` in method type, and repeat the process done before.
+
+![image](https://github.com/user-attachments/assets/49389920-2847-468e-8bdc-52fbf4fef0c8)
+
+6. Keep the rest settings at default and click `Create method` at the bottom. Then, click `/` in the navigation pane and create another method.
+
+![image](https://github.com/user-attachments/assets/8be7ff8f-3221-4845-99d8-9222a2ebcd17)
+
+7. Click `Create method`. Under method type, select `POST` in method type, and repeat the process done before.
 8. In the API Resources page, click `Deploy API`. Under stage, select `New stage` and enter `dev` in stage name. Click `Deploy`.
+
+![image](https://github.com/user-attachments/assets/f22ef6ed-ed92-460f-be63-3f0cea27611e)
+
 9. In the stages page, copy the `Invoke URL`. Enter the URL in a new tab, it should display the contact form web page.
 
 ## Part 4: Test the API Endpoint with a contact form
