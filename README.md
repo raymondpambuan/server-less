@@ -35,7 +35,7 @@ Serverless computing is a cloud computing execution model where the cloud provid
 ![image](https://github.com/user-attachments/assets/9b3dbf56-be60-4867-a2f1-c0af677fb13d)
 
 9. Click `Create function` and enter function name `demofunction`. Under Runtime, select `Python 3.12`, and architecture to `x86_64`.
-10. Expand the default execution role, then tick `Use an existing role`, and select the recently created (admin-lambda). Afterward, click create function.
+10. Expand the  `Change default execution role`, then tick `Use an existing role`, and select the recently created (admin-lambda). Afterward, click create function.
 
 ![image](https://github.com/user-attachments/assets/335fe3da-d4a7-4413-a4a5-29ee8817b999)
 
