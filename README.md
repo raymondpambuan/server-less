@@ -43,7 +43,7 @@ Serverless computing is a cloud computing execution model where the cloud provid
 
 ![image](https://github.com/user-attachments/assets/51112788-911b-422d-a48f-7e835f6dd4f6)
 
-12. In your Lambda function, click `Upload from`, select `.zip file`. 
+12. In your Lambda `Code` section, click `Upload from`, select `.zip file`. 
 
 ![image](https://github.com/user-attachments/assets/8d627c5b-f348-4319-a11d-9545e1398359)
 
